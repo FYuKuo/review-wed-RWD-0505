@@ -29,13 +29,26 @@
     font-size: 20px;
 }
 
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px;
+}
+
+.card {
+    width: 20%;
+    height: 400px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+
 
 @media (max-width:576px) {
     .header {
         background: url(https://atctwn.com/wp-content/uploads/2020/02/%E6%B0%B8%E9%87%8E-1-600x900.jpg) no-repeat;
         height: 600px;
         width: 100%;
-    background-position: center;
+        background-position: center;
 
     }
 }
