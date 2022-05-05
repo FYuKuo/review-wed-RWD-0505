@@ -1,4 +1,41 @@
 * {
     box-sizing: border-box;
-    
+    margin: 0;
+}
+
+.header {
+    background: url(https://atctwn.com/wp-content/uploads/2020/02/%E6%B0%B8%E9%87%8E-2.jpg) no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>h1,p {
+    color: white;
+    text-shadow: 2px 2px 10px rgb(51, 51, 51);
+    margin: 10px auto;
+    letter-spacing: 2px;
+}
+
+.header>h1 {
+    font-size: 52px;
+}
+
+.header>p {
+    font-size: 20px;
+}
+
+
+@media (max-width:576px) {
+    .header {
+        background: url(https://atctwn.com/wp-content/uploads/2020/02/%E6%B0%B8%E9%87%8E-1-600x900.jpg) no-repeat;
+        height: 600px;
+        width: 100%;
+    background-position: center;
+
+    }
 }
