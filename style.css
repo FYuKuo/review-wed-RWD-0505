@@ -40,7 +40,18 @@
     height: 400px;
     border: 1px solid lightgrey;
     border-radius: 20px;
+    overflow: hidden;
 }
+
+.card_img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.card_img>img {
+    width: 300px;
+}
+
 
 
 @media (max-width:576px) {
