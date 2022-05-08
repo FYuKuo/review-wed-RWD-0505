@@ -33,6 +33,7 @@
     display: flex;
     justify-content: space-around;
     margin: 20px 10px;
+
 }
 
 .card {
@@ -42,13 +43,15 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: rgba(85, 85, 85, 0.144) 7px 7px 10px;
+    position: relative;
+    /* transition: 2s all; */
+
 }
 
 .card_img{
     /* overflow: hidden; */
-    position: relative;
+    position: absolute;
     transition: 2s all;
-
 }
 
 .card_img>img {
@@ -56,11 +59,14 @@
 }
 
 .card_pra {
+    width: 300px;
+    height: 400px;
     position: absolute;
-    bottom: 0px;
-    padding: 10px 30px;
+    /* bottom: 0px; */
+    padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     color: white;
     letter-spacing: 2px;
     text-shadow: 1px 1px 5px rgb(180, 180, 180);
@@ -71,7 +77,7 @@
     margin: 10px 0;
 }
 
-.card_img:hover {
+.card:hover .card_img {
     transform: scale(1.2,1.2);
 }
 
